@@ -1,0 +1,59 @@
+body,
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 32px;
+	font-weight: 100;
+	line-height: 1.3em;
+	letter-spacing: 0.5pt;
+}
+
+h1 {
+	text-align: center;
+	color: aliceblue;
+	font-size: 4.8rem;
+	font-weight: 300;
+}
+
+section {
+	width: 1200px;
+	margin: 90px auto 20px auto;
+}
+
+/*@media screen and (max-width: 400px) {
+	section {
+		width: 320px;
+	}
+}*/
+
+header {
+	background-image: url('/Users/yuliademakova/Desktop/lab-css-recipes-clone/apple-pie/images/apple-pie.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: 0 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+ul {
+	list-style-type: '-';
+}
+
+ol {
+	list-style: none;
+	counter-reset: bracket-counter;
+	padding-inline-start: 20px;
+}
+ol li {
+	counter-increment: bracket-counter;
+}
+ol li::before {
+	content: counter(bracket-counter) ') ';
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
